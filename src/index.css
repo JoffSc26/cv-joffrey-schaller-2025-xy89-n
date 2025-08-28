@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { font-family: "Times New Roman", Times, serif; }
+body { background: #fdf8f2; color: #000; }
