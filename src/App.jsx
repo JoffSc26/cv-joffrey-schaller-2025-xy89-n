@@ -29,7 +29,7 @@ function App() {
 
       {/* Lien mémoire */}
       <a
-        href="/assets/memoire.pdf"
+        href="/cv-joffrey-schaller-2025-xy89-n/assets/memoire.pdf"
         target="_blank"
         className="mt-4 inline-block px-4 py-2 bg-blue-500 text-white rounded"
       >
