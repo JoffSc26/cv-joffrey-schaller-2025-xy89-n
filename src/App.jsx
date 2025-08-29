@@ -1,14 +1,33 @@
 import React from "react";
+import profile from "/assets/profile.jpg"; // Import direct
 
 function App() {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-4">Mon CV</h1>
+    <div className="p-8 max-w-3xl mx-auto">
+      <h1 className="text-4xl font-bold mb-6">Joffrey Schaller</h1>
+      <p className="mb-6 text-gray-700">Développeur web junior - Passionné par React et Tailwind</p>
 
-      <img src="/assets/profile.jpg" alt="Photo" className="mb-4 w-48 rounded" />
+      {/* Photo */}
+      <img
+        src={profile}
+        alt="Photo de profil"
+        className="mb-6 w-48 rounded shadow"
+      />
 
-      <p>Bienvenue sur mon CV interactif !</p>
+      {/* Section expériences */}
+      <h2 className="text-2xl font-semibold mb-4">Expériences</h2>
+      <ul className="mb-6 list-disc list-inside">
+        <li>Stage en développement web - Entreprise X (2024)</li>
+        <li>Projet universitaire : site e-commerce en React</li>
+      </ul>
 
+      {/* Section formation */}
+      <h2 className="text-2xl font-semibold mb-4">Formation</h2>
+      <ul className="mb-6 list-disc list-inside">
+        <li>Master Informatique - Université Y (2025)</li>
+      </ul>
+
+      {/* Lien mémoire */}
       <a
         href="/assets/memoire.pdf"
         target="_blank"
